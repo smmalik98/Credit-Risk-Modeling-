@@ -19,3 +19,16 @@ But everything always pointed towards one thing i.e., "DROPPING COLUMNS". My fir
 
 ### Feature Selection and Engineering
 There are different methods when it comes to feature selection like 'SelectKBest', 'ChiSquare Method' etc but every method has its own purpose. This is where we introduce the concepts of Weight of Evidence and Information Value.
+#### Weight of Evidence: 
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/97324716/205807842-51d848ce-6013-45a8-83cc-5db2ebd42ee8.png">
+This meme best explains the concept of WoE. It can be seen that each witness is describing the appearance of the perpretor. Since the appearance which is being described matches the appearance of Frank, his lawayer is therefore informing him that the weight of evidence is against him.
+#### Information Value
+The meme indirectly is also talking about information value. The information provided by each witness has some value and this value adds up to form the information value. 
+Information Value (IV)	Predictive Power
+<0.02	Useless For Prediction
+0.02< IV < 0.1	Weak Predictors
+0.1 < IV < 0.3	Moderate
+0.3 < IV < 0.5	Strong Predictors
+> 0.5	Suspicious Behavior <img width="832" alt="image" src="https://user-images.githubusercontent.com/97324716/205811231-44f5c88d-7116-4ef7-b4e4-2f328e1beb81.png">
+
+
