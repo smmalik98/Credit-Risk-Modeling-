@@ -11,4 +11,5 @@ Credit risk analysis is a method of determining the likelihood that a customer w
 <img width="250" alt="image" src="https://user-images.githubusercontent.com/97324716/205785778-bd781b83-913d-4ac7-9fa4-e0a92c37172d.png">
 Here I am trying to clean the data which is required for credit risk analysis. The definition of clean data is relative and varies depending on it's usage. For me, I am defining a clean data as a data which can be used for predicting the probability of the customers and a data which is machine readable. But I will also be providing with a clean data which was defined according to a paper written by Wickham (which is human readable data)
 
-
+### Cleaning Life-Cycle
+<img width="1154" alt="image" src="https://user-images.githubusercontent.com/97324716/205786332-c74601e1-c4ae-4b24-8f17-d3ee22e0b508.png">
