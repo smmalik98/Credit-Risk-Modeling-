@@ -45,18 +45,31 @@ Here it is very difficult to find out which attributes can be grouped or merged.
 On the basis of the strategy described, here are the final groups:
 
 IA, HI, ID, ME, WY, DC, NE, ND, ME
+
 NV, AL
+
 NY
+
 VA, OK, LA, FL
+
 UT, SD, NM, NC
+
 CA
+
 MD, NJ, AZ, TN, IN, PA, MI, MO, MN
+
 AR, OH
+
 DE, KY, MA
+
 RI
+
 WA, OR
+
 TX, WI
+
 AK, GA
+
 KS, MT, IL
 
 When it comes to numerical variables, we are simply using correlation plot to eliminate some highly correlated variables.
