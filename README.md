@@ -1,5 +1,5 @@
 # Credit-Risk-Modeling
-Data Cleaning &amp; Processing with respect to predicting the probability of a customer defaulting 
+Data Cleaning &amp; Processing of a dataset to understand the likelihood and the financial impact of defaulting lender.
 
 ## Part 1: Data Cleaning And Processing
 
@@ -13,9 +13,9 @@ Here I am trying to clean the data which is required for credit risk analysis. T
 
 ### Cleaning Life-Cycle
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/97324716/205786332-c74601e1-c4ae-4b24-8f17-d3ee22e0b508.png">
-Every person working with data craves for an ideal data that fulfills each and every target (Model Development, Visualization etc). To achieve their goal these people spend eternity achieving that goal and this meme clearly expresses what I am trying to tell and felt while cleaning this data. This is a huge data that has got 75 rows and ~900k rows. Simply putting this data into a model won't make sense since this data is currently not even in its human-readable. Our first priority here is to convert it into a human-readable format and then transforming it into a machine readable format. There were many columns that had to be converted into a digestible formats like converting dates from 'obj' to 'datetime'.
+Every person working with data craves for an ideal data that fulfills each and every target (Model Development, Visualization etc). To achieve their goal these people spend eternity to reach that goal. This meme clearly expresses what I am trying to tell and what I felt while cleaning this data. This is a huge dataset which has got 75 rows and ~900k rows. Simply putting this data into a model won't make sense since this data is currently not even in its human-readable. Our first priority here is to convert it into a human-readable format and then transforming it into a machine readable format. There were many columns that had to be converted into a digestible formats like converting dates from 'obj' to 'datetime'.
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/97324716/205788860-ca3e19ca-0c3b-4bae-880b-c11ffb800cef.png">
-But everything always pointed towards one thing i.e., "DROPPING COLUMNS". My first step towards it constitutes of getting an overview of the data and removing columns that cannot be used (like titles, url etc). Moving forward I look at the missing values in the column, if there are rows with more than 30% of missing values, drop them or try to find patterns. Replacing large amounts of missing makes the data bias which is why I try to avoid this. 
+But everything always pointed towards one thing i.e., "DROPPING COLUMNS". My first step towards it constitutes of getting an overview of the data and removing columns that cannot be used (like titles, url etc). Moving forward I look at the missing values in the column, if there are rows with more than 30% of missing values, drop them or try to find patterns. Replacing large amounts of missing cells makes the data bias which is why I try to avoid replacing values.
 
 ### Feature Selection and Engineering
 There are different methods when it comes to feature selection like 'SelectKBest', 'ChiSquare Method' etc but every method has its own purpose. This is where we introduce the concepts of Weight of Evidence and Information Value.
@@ -76,3 +76,12 @@ When it comes to numerical variables, we are simply using correlation plot to el
 
 ## Part 2: Model Development
 # IN PROGRESS
+
+# References:
+1. SinHacker. (2020, March 9). Model? or do you mean weight of evidence (WOE) and information value (iv)? Medium. Retrieved November 30, 2022, from https://towardsdatascience.com/model-or-do-you-mean-weight-of-evidence-woe-and-information-value-iv-331499f6fc2
+2. Weight of evidence - definition and meaning. Market Business News. (2018, August 17). Retrieved November 30, 2022, from https://marketbusinessnews.com/financial-glossary/weight-evidence-definition-meaning/
+3. Credit risk assessment: Allianz Trade in USA. Corporate. (n.d.). Retrieved November 30, 2022, from https://www.allianz-trade.com/en_US/insights/how-to-improve-credit-risk-analysis.html#:~:text=What%20is%20Credit%20Risk%20Analysis,to%20continue%20to%20do%20so.
+4. Krishnan, S. (2019, December 20). Weight of evidence and information value using python. Medium. Retrieved November 30, 2022, from https://sundarstyles89.medium.com/weight-of-evidence-and-information-value-using-python-6f05072e83eb
+5. Team, T. I. (2022, September 20). Credit risk: Definition, role of ratings, and examples. Investopedia. Retrieved November 30, 2022, from https://www.investopedia.com/terms/c/creditrisk.asp 
+6. Numpy.dtype.kind¶. numpy.dtype.kind - NumPy v1.9 Manual. (n.d.). Retrieved December 5, 2022, from https://docs.scipy.org/doc/numpy-1.9.2/reference/generated/numpy.dtype.kind.html 
+7. Weight of evidence - definition and meaning. Market Business News. (2018, August 17). Retrieved December 5, 2022, from https://marketbusinessnews.com/financial-glossary/weight-evidence-definition-meaning/ 
