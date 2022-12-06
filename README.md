@@ -13,3 +13,9 @@ Here I am trying to clean the data which is required for credit risk analysis. T
 
 ### Cleaning Life-Cycle
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/97324716/205786332-c74601e1-c4ae-4b24-8f17-d3ee22e0b508.png">
+Every person working with data craves for an ideal data that fulfills each and every target (Model Development, Visualization etc). To achieve their goal these people spend eternity achieving that goal and this meme clearly expresses what I am trying to tell and felt while cleaning this data. This is a huge data that has got 75 rows and ~900k rows. Simply putting this data into a model won't make sense since this data is currently not even in its human-readable. Our first priority here is to convert it into a human-readable format and then transforming it into a machine readable format. There were many columns that had to be converted into a digestible formats like converting dates from 'obj' to 'datetime'.
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/97324716/205788860-ca3e19ca-0c3b-4bae-880b-c11ffb800cef.png">
+But everything always pointed towards one thing i.e., "DROPPING COLUMNS". My first step towards it constitutes of getting an overview of the data and removing columns that cannot be used (like titles, url etc). Moving forward I look at the missing values in the column, if there are rows with more than 30% of missing values, drop them or try to find patterns. Replacing large amounts of missing makes the data bias which is why I try to avoid this. 
+
+### Feature Selection and Engineering
+There are different methods when it comes to feature selection like 'SelectKBest', 'ChiSquare Method' etc but every method has its own purpose. This is where we introduce the concepts of Weight of Evidence and Information Value.
