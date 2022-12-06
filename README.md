@@ -29,6 +29,37 @@ Information Value (IV)	Predictive Power
 0.02< IV < 0.1	Weak Predictors
 0.1 < IV < 0.3	Moderate
 0.3 < IV < 0.5	Strong Predictors
-> 0.5	Suspicious Behavior <img width="832" alt="image" src="https://user-images.githubusercontent.com/97324716/205811231-44f5c88d-7116-4ef7-b4e4-2f328e1beb81.png">
+> 0.5	Suspicious Behavior <img width="500" alt="image" src="https://user-images.githubusercontent.com/97324716/205811231-44f5c88d-7116-4ef7-b4e4-2f328e1beb81.png">
+The information can be weak and incapable of targetting the desired information or the information can be too goo to be true. The desired value of range can be found in the upper table.
 
+Moving forward we will be looking at the information value, the weight of evidence and the number of observations, but this will be limited to only categorical variable. 
+![image](https://user-images.githubusercontent.com/97324716/205811639-5c6b36be-5ff2-460d-9a82-1faf25e19dfd.png)
+When we plot the weight of evidences of each element of a column, we get something like. But what should we be looking at? 
+All grades have a linear relationship with weight of average. With 'A' having a very high WOE it raises suspiscion but if we look at it's 'n_obs', it seems to have a high value which removes our suspiscion. 'E' and 'D' have similar WOE but when we look at their 'n_obs', there is a huge difference, hence they cannot be merged. We are going to keep each of them in their original form, there is no need to merge them.
 
+But there are cases where it's all same like this, what strategy should we follow?
+![image](https://user-images.githubusercontent.com/97324716/205811960-2cec927e-9eef-44a6-bccc-a83ee4a06fdd.png)
+
+Here it is very difficult to find out which attributes can be grouped or merged. The strategy for grouping these elements will include looking at the n_obs and WOE like before with a twist. Since the WOE of elements are very similar we will keep grouping elements looking at their WOE first. When we see that the n_obs of the succeding element decreases, the group ends there and a new group starts. There are cases where there is only a single element in a group. The n_obs difference and the WOE difference must have been too large or the previous strategy might be isolating some elements. Some elements have their n_obs very low i.e. >2000, they have been grouped together to have a comparable n_obs with rest of the groups.
+
+On the basis of the strategy described, here are the final groups:
+
+IA, HI, ID, ME, WY, DC, NE, ND, ME
+NV, AL
+NY
+VA, OK, LA, FL
+UT, SD, NM, NC
+CA
+MD, NJ, AZ, TN, IN, PA, MI, MO, MN
+AR, OH
+DE, KY, MA
+RI
+WA, OR
+TX, WI
+AK, GA
+KS, MT, IL
+
+When it comes to numerical variables, we are simply using correlation plot to eliminate some highly correlated variables.
+
+## Part 2: Model Development
+# IN PROGRESS
