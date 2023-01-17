@@ -27,8 +27,7 @@ This meme best explains the concept of WoE. It can be seen that each witness is 
 #### Information Value
 The meme indirectly is also talking about information value. The information provided by each witness has some value and this value adds up to form the information value. 
 
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/97324716/212807313-9312ba11-0604-47cc-83d4-fdf29726a3d9.png">
-
+<img width="500" alt="Screen Shot 2023-01-17 at 9 30 25 AM" src="https://user-images.githubusercontent.com/97324716/212807506-0ce16b00-dd5a-4432-83a9-0265cd0c9f5c.png">
 The information can be weak and incapable of targetting the desired information or the information can be too goo to be true. The desired value of range can be found in the upper table.
 
 Moving forward we will be looking at the information value, the weight of evidence and the number of observations, but this will be limited to only categorical variable. 
