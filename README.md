@@ -73,7 +73,16 @@ KS, MT, IL
 When it comes to numerical variables, we are simply using correlation plot to eliminate some highly correlated variables.
 
 ## Part 2: Model Development
-# IN PROGRESS
+### Hyper-parameter Tuning using Bayesian Hyperopt
+Bayesian hyperopt is a way to find the best set of parameters for a model. It works by testing different combinations of parameters and using the results to predict which set of parameters will work best. It uses a method called Bayesian optimization, which makes educated guesses about which parameter combinations to try next based on the previous results. This process continues until the algorithm finds the best set of parameters for the model. Essentially, it's like trying different recipes and using the feedback to refine the ingredients and cooking process until you create the perfect dish.
+
+### Model Results 
+![image](https://user-images.githubusercontent.com/97324716/235721099-c75b697b-4a57-4157-af6d-1099f1cb576c.png)
+
+It is important to understand the business context in which the model will be used. For instance, what is the impact of false positives and false negatives? If a false positive results in a good customer being denied credit, it can lead to loss of business and customer dissatisfaction. Similarly, if a false negative results in a bad loan being approved, it can lead to default and financial losses for the lender. Thus, the business objectives and acceptable levels of risk need to be considered.
+
+In summary, while an F1 score of 0.97 is impressive, it is important to consider the business context, data quality, interpretability, and performance in production before deciding whether the model is ready for deployment.
+
 
 # References:
 1. SinHacker. (2020, March 9). Model? or do you mean weight of evidence (WOE) and information value (iv)? Medium. Retrieved November 30, 2022, from https://towardsdatascience.com/model-or-do-you-mean-weight-of-evidence-woe-and-information-value-iv-331499f6fc2
